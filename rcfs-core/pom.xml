@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <packaging>jar</packaging>
+
+    <parent>
+        <groupId>io.github.caihxai</groupId>
+        <artifactId>rcfs-caihx</artifactId>
+        <version>1.0.4-beta</version>
+    </parent>
+
+    <artifactId>rcfs-core</artifactId>
+    <name>rcfs-core</name>
+    <description>rcfs-core</description>
+
+    <url>https://github.com/chx516/rcfs-caihx</url>
+
+    <scm>
+        <url>https://github.com/chx516/rcfs-caihx</url>
+        <connection>scm:git:https://github.com/chx516/rcfs-caihx.git</connection>
+        <developerConnection>scm:git:ssh://github.com/chx516/rcfs-caihx.git</developerConnection>
+    </scm>
+    <developers>
+        <developer>
+            <id>master</id>
+            <name>caihx</name>
+            <email>utomeai@outlook.com</email>
+            <url>https://github.com/chx516</url>
+            <organization>caihx</organization>
+            <organizationUrl>https://github.com/chx516</organizationUrl>
+            <roles>
+                <role>Master</role>
+            </roles>
+            <timezone>Europe/Paris</timezone>
+        </developer>
+    </developers>
+    <licenses>
+        <license>
+            <name>The Apache License, Version 2.0</name>
+            <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+            <distribution>repo</distribution>
+        </license>
+    </licenses>
+
+    <dependencies>
+<!--        <dependency>-->
+<!--            <groupId>org.springframework.boot</groupId>-->
+<!--            <artifactId>spring-boot-starter-web</artifactId>-->
+<!--        </dependency>-->
+
+        <dependency>
+            <groupId>io.github.caihxai</groupId>
+            <artifactId>rcfs-common</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>io.github.caihxai</groupId>
+            <artifactId>rcfs-watch-service</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+    </dependencies>
+
+<!--    <profiles>-->
+<!--        <profile>-->
+<!--            <id>springboot</id>-->
+<!--            <dependencies>-->
+<!--                <dependency>-->
+<!--                    <groupId>${project.groupId}</groupId>-->
+<!--                    <artifactId>rcfs-core</artifactId>-->
+<!--                </dependency>-->
+<!--            </dependencies>-->
+<!--            <build>-->
+<!--                <plugins>-->
+<!--                    <plugin>-->
+<!--                        <groupId>org.springframework.boot</groupId>-->
+<!--                        <artifactId>spring-boot-maven-plugin</artifactId>-->
+<!--                    </plugin>-->
+<!--                </plugins>-->
+<!--                <finalName>rcsf-core</finalName>-->
+<!--            </build>-->
+<!--        </profile>-->
+<!--    </profiles>-->
+
+</project>

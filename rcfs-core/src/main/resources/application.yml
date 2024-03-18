@@ -1,0 +1,14 @@
+spring:
+  rcfs:
+    config:
+      resources: D:\Project Code\code\rcfs-caihx\rcfs-core\src\main\resources
+      enable: true
+      mode: watch
+      watch:
+        time: 3000
+        file:
+          - aaa.yml
+          - bbb.yml
+      client:
+        path: /update
+        port: 7001

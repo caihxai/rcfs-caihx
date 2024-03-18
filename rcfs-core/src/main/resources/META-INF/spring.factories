@@ -1,0 +1,6 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+  com.caihx.rcfs.core.config.RcfsConfigAutoConfiguration,\
+  com.caihx.rcfs.core.config.RcfsConfigWatchConfiguration,\
+  com.caihx.rcfs.core.config.RcfsConfigHttpConfiguration
+org.springframework.context.ApplicationContextInitializer=\
+  com.caihx.rcfs.core.config.context.RcfsApplicationContextInitializer
