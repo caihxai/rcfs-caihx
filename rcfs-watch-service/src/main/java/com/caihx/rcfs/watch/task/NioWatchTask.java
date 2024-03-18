@@ -51,7 +51,6 @@ public class NioWatchTask implements RcfsWatchTask, Runnable {
                 key = service.take();
 
                 for (WatchEvent<?> event : key.pollEvents()) {
-                    // todo
                     List<String> profilesList = environmentPostProcessor.getProfilesList();
                     if (profilesList.contains(event.context().toString())&&((file.contains(event.context().toString()))||file.isEmpty())){
                         logger.info("Rcfs Message - File triggered modification event:["+event.context().toString()+"]");
